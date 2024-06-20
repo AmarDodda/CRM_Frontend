@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Defining the base URL for the API
-const baseURL = process.env.REACT_APP_API_BASE_URL;
+const baseURL = 'https://crm-backend-7-cu7u.onrender.com';
 
 const instance = axios.create({
     baseURL,
