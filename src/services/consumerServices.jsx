@@ -13,13 +13,10 @@ const consumerServices = {
             return response.data;
         } catch (error) {
             if (error.response) {
-                // Server responded with a status other than 2xx
                 console.error("Server Error:", error.response.data);
             } else if (error.request) {
-                // Request was made but no response received
                 console.error("Network Error:", error.request);
             } else {
-                // Something happened in setting up the request
                 console.error("Error:", error.message);
             }
             throw error;
@@ -49,7 +46,7 @@ const consumerServices = {
 
     getConsumer: async () => {
         try {
-            const response = await protectedInstance.get('/api/consumers/profile'); // Assuming endpoint to fetch current consumer data
+            const response = await protectedInstance.get('/api/consumers/profile'); 
             return response.data;
         } catch (error) {
             throw error;

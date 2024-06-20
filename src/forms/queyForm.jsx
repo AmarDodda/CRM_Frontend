@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 import { useToast } from '../contexts/ToastContext';
 
 const QueryForm = () => {
-  const { consumer } = useOutletContext(); // Access consumer from context
+  const { consumer } = useOutletContext(); // Accessing consumer from context
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -27,7 +27,7 @@ const QueryForm = () => {
         date: date ? new Date(date).toISOString() : new Date().toISOString(),
       };
 
-      const backendUrl = 'http://localhost:3001/query'; // Adjust URL as per your backend
+      const backendUrl = 'http://localhost:3001/query'; 
 
       const token = localStorage.getItem('jwtToken');
 
