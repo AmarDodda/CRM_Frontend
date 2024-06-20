@@ -29,7 +29,7 @@ const FeedbackForm = () => {
         date: date ? new Date(date).toISOString() : new Date().toISOString(),
       };
 
-      const backendUrl = 'http://localhost:3001/feedback'; 
+      const backendUrl = 'https://crm-backend-7-cu7u.onrender.com/feedback'; 
 
       const token = localStorage.getItem('jwtToken');
 

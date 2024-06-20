@@ -27,7 +27,7 @@ const QueryForm = () => {
         date: date ? new Date(date).toISOString() : new Date().toISOString(),
       };
 
-      const backendUrl = 'http://localhost:3001/query'; 
+      const backendUrl = 'https://crm-backend-7-cu7u.onrender.com/query'; 
 
       const token = localStorage.getItem('jwtToken');
 

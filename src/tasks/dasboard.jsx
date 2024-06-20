@@ -22,7 +22,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/customers');
+        const response = await axios.get('https://crm-backend-7-cu7u.onrender.com/customers');
         setCustomers(response.data);
       } catch (error) {
         console.error('Error fetching customers:', error);

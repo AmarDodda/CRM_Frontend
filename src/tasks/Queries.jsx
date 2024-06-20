@@ -7,7 +7,7 @@ const QueriesList = () => {
   useEffect(() => {
     const fetchQueries = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/query');
+        const response = await axios.get('https://crm-backend-7-cu7u.onrender.com/query');
         setQueries(response.data);
       } catch (error) {
         console.error('Error fetching queries:', error);

@@ -7,7 +7,7 @@ const CommunicationList = () => {
   useEffect(() => {
     const fetchCommunications = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/communications');
+        const response = await axios.get('https://crm-backend-7-cu7u.onrender.com/communications');
         setCommunications(response.data);
       } catch (error) {
         console.error('Error fetching communications:', error);
