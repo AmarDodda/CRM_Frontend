@@ -160,7 +160,7 @@ const UserDashboardWrapper = () => {
           {/* Welcome message and logout */}
           <div className="text-light">
             <span className="me-3">Welcome {user?.user.name}</span>
-            <Link className="btn btn-outline-light" to="#" onClick={handleLogout}>
+            <Link className="btn btn-outline-light" to="/login" onClick={handleLogout}>
               Logout
             </Link>
           </div>
