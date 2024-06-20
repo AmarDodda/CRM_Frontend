@@ -53,8 +53,8 @@ const Dashboard = () => {
 
   const handleSave = async (customerId, updatedCustomerData) => {
     try {
-      await axios.put(`http://localhost:3001/customers/${customerId}`, updatedCustomerData);
-      const response = await axios.get('http://localhost:3001/customers');
+      await axios.put(`https://crm-backend-7-cu7u.onrender.com/customers/${customerId}`, updatedCustomerData);
+      const response = await axios.get('https://crm-backend-7-cu7u.onrender.com/customers');
       setCustomers(response.data);
       setEditCustomer(null); 
       console.log('Customer updated successfully');
@@ -65,7 +65,7 @@ const Dashboard = () => {
 
   const handleDelete = async (customerId) => {
     try {
-      await axios.delete(`http://localhost:3001/customers/${customerId}`);
+      await axios.delete(`https://crm-backend-7-cu7u.onrender.com/customers/${customerId}`);
       setCustomers(customers.filter(customer => customer._id !== customerId));
       console.log('Customer deleted successfully');
     } catch (error) {
@@ -76,7 +76,7 @@ const Dashboard = () => {
   const handleSendEmail = async (customerId) => {
     try {
       await axios.post(
-        `http://localhost:3001/communications/sendEmail/${customerId}`
+        `https://crm-backend-7-cu7u.onrender.com/communications/sendEmail/${customerId}`
       );
       addToast("Email sent successfully",'success');
     } catch (error) {

@@ -52,7 +52,7 @@ const CustomerInfo = () => {
           onSubmit={(values, { setSubmitting }) => {
             console.log(values); // Log values to debug
 
-            axios.post("http://localhost:3001/customers", values)
+            axios.post("https://crm-backend-7-cu7u.onrender.com/customers", values)
               .then(response => {
                 alert("Customer added successfully");
                 setSubmitting(false);
