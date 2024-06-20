@@ -51,7 +51,7 @@ const RegisterCustomer = () => {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h2 className="card-title text-center mb-4">Register</h2>
+              <h2 className="card-title text-center mb-4">Consumer Register</h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">Name</label>

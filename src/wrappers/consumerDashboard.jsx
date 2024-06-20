@@ -58,7 +58,7 @@ const ConsumerDashboardWrapper = () => {
           {/* Welcome message and logout */}
           <div className="text-light">
             <span className="me-3">Welcome {consumer?.consumer.name}</span>
-            <Link className="btn btn-outline-light" to="#" onClick={handleLogout}>
+            <Link className="btn btn-outline-light" to="/consumerlogin" onClick={handleLogout}>
               Logout
             </Link>
           </div>

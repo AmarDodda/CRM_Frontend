@@ -36,7 +36,7 @@ const LoginCustomer = () => {
         <div className="col-md-6">
           <div className="card shadow-sm">
             <div className="card-body">
-              <h2 className="card-title text-center mb-4">Login</h2>
+              <h2 className="card-title text-center mb-4">Consumer Login</h2>
               <form onSubmit={handleLogin}>
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">Email Address</label>
